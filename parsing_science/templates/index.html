@@ -1,12 +1,15 @@
 {% extends "layout.html" %}
 {% block content %}
-  <div class="home">
-    <h1>Welcome </h1>
-    <p>
-      This website has links to my latest projects and talks. <br><br>
-      Click on the links at the top panel to see some of the stuff that I've been up to.
-    </p>
+  <div class="home row-fluid">
+    <div class="col-md-5">
+        <p>
+          Hello, I'm Nicole Carlson, a Data Scientist in Chicago.
+          This website has links to my latest projects and talks. <br><br>
+        </p>
+    </div>
+    <div class="col-md-7">
 
-    <img src="{{ url_for('static', filename='media/logo.png') }}" alt="Parsing Science logo" style="width:25%;height:25%"> 
+        <img src="{{ url_for('static', filename='media/logo.png') }}" alt="Parsing Science logo" style="width:50%;height:50%">
+    </div> 
   </div>
 {% endblock %}
