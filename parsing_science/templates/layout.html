@@ -25,21 +25,38 @@
   </head>
   <body>
     <header>
-      <div class="container">
-        <h1 class="logo">Nicole's web app</h1>
-        <strong><nav>
-          <ul class="menu">
-            <li><a href="{{ url_for('home') }}">Home</a></li>
-            <li><a href="{{ url_for('about') }}">About</a></li>
-            <li><a href="{{ url_for('projects') }}">Projects</a></li>
-            <li><a href="{{ url_for('talks') }}">Talks</a></li>
-            <li><a href="http://www.parsingscience.blogspot.com" target="_blank">Blog</a></li>
-            <li><a href="{{ url_for('contact') }}">Contact</a></li>
-          </ul>
-        </nav></strong>
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <h1>Parsing Science</h1>
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="{{ url_for('home') }}"> Home </a>
+          </div>
+          <!-- <img src="media/parsing.jpg" alt="Brand" style="width:65px;height:44px">-->
+          
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+            <ul class="nav navbar-nav">
+              <li><a href="{{ url_for('about') }}"> About</a></li>
+              <li><a href="{{ url_for('projects') }}"> Projects</a></li>
+              <li><a href="{{ url_for('talks') }}"> Talks</a></li>
+              <li><a href="https://www.parsingscience.blogspot.com" target="_blank"> Blog</a></li>
+              <li><a href="{{ url_for('contact') }}"> Contact</a></li>
+            </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+      </nav>
+
       </div>
     </header>
-    <div class="container">
+    <div class="container-fluid">
       {% block content %}
       {% endblock %}
     </div>
