@@ -36,7 +36,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="{{ url_for('home') }}"> Home </a>
+            <a class="navbar-brand" href="{{ url_for('core.index') }}"> Home </a>
           </div>
           <!-- <img src="media/parsing.jpg" alt="Brand" style="width:65px;height:44px">-->
           
@@ -44,17 +44,15 @@
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
             <ul class="nav navbar-nav">
-              <li><a href="{{ url_for('about') }}"> About</a></li>
-              <li><a href="{{ url_for('projects') }}"> Projects</a></li>
-              <li><a href="{{ url_for('talks') }}"> Talks</a></li>
+              <li><a href="{{ url_for('core.about') }}"> About</a></li>
+              <li><a href="{{ url_for('core.projects') }}"> Projects</a></li>
+              <li><a href="{{ url_for('core.talks') }}"> Talks</a></li>
               <li><a href="http://www.parsingscience.blogspot.com" target="_blank"> Blog</a></li>
-              <li><a href="{{ url_for('contact') }}"> Contact</a></li>
+              <li><a href="{{ url_for('core.contact') }}"> Contact</a></li> 
             </ul>
-            </div><!-- /.navbar-collapse -->
-          </div><!-- /.container-fluid -->
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
       </nav>
-
-      </div>
     </header>
     <div class="container-fluid">
       {% block content %}

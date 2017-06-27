@@ -8,4 +8,7 @@ app = Flask(__name__)
 def not_found(error):
     return render_template('404.html'), 404
 
-import parsing_science.views
+#import parsing_science.views
+
+from parsing_science.core.views import mod as core
+app.register_blueprint(core)
