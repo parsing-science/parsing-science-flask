@@ -10,7 +10,7 @@ python run.py
 
 Go to `http://0.0.0.0:5000/`
 
-## Real Website
+## Hosted Version
 
 This is hosted by Dreamhost at [www.parsingscience.com](www.parsingscience.com).
 
