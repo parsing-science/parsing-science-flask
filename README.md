@@ -8,7 +8,7 @@ pip install -r requirements.txt
 python run.py
 ```
 
-Go to `http://0.0.0.0:5000/`
+Go to `http://127.0.0.1:5000/`
 
 ## Hosted Version
 
