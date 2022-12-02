@@ -2,8 +2,8 @@
 
 ## Running locally
 ```
-virtualenv venv
-source venv/bin/activate
+pyenv virtualenv 3.8.9 parsing-science-flask
+pyenv local parsing-science-flask
 pip install -r requirements.txt
 python run.py
 ```
